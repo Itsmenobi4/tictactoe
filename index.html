@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="flex items-center justify-center min-h-screen px-4">
+  <div class="bg-white bg-opacity-90 backdrop-blur-sm shadow-2xl rounded-3xl p-8 flex flex-col items-center space-y-6 w-[360px]">
+    <h1 class="text-4xl font-extrabold text-indigo-700 drop-shadow-lg tracking-widest animate-pulse">Tic Tac Toe</h1>
+
+    <div id="board" class="grid grid-cols-3 gap-3"></div>
+
+    <div id="message" class="text-lg font-semibold text-gray-800 min-h-[24px] text-center"></div>
+
+    <button onclick="restartGame()" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-all font-semibold shadow-md">
+      Main Lagi
+    </button>
+  </div>
+
+  <script src="backend.js"></script>
+</body>
+</html>
